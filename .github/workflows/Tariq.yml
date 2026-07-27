@@ -1,0 +1,17 @@
+name : I'm here announcing this new project and I am thrilled to share it with you all.
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Print Message
+        run: echo "Hello GitHub Actions!"
