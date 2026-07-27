@@ -1,0 +1,17 @@
+name : Hello! My name is Ukasha. This is my new Project. I am excited to share it with you all.
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Print Message
+        run: echo "Hello GitHub Actions!"
