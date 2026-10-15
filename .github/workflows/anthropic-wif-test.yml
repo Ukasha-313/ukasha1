@@ -1,0 +1,5 @@
+name: test project
+
+on:
+  pull_request:
+    branches: [ main ]
